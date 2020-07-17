@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6175661d42.js" crossorigin="anonymous"></script>
+    <title>Animated Counter</title>
+	<link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style>
+			
+
+		body {
+			font-family: 'Jost', sans-serif;
+			font-style: normal;
+			font-weight: 700;
+			color: #041454;
+			height: 100vh;
+		}
+		.counters {
+			background: #57d9e6;
+			color: #041454;
+			padding: 130px 0px 170px 0px;
+			border-top: 3px lightskyblue solid;
+		}
+
+		.counters .container {
+			display: grid;
+			grid-gap: 30px;
+			grid-template-columns:auto auto auto auto auto auto auto;
+			text-align: center;
+		}
+
+		.counters .counter {
+			font-size: 45px;
+			margin: 10px ;
+		}
+
+		
+		</style>
+</head>
+<body>
+   
+    <div class="counters">
+        <div class="container">
+			<div>
+                <div class="counter" data-target="150">0</div>
+                <h3>Ventures Incubated</h3>
+            </div>
+            <div>
+                <div class="counter" data-target="500">0</div>
+                <h3>Entrepreneurs Engaged</h3>
+            </div>
+            <div>
+                <div class="counter" data-target="1500">0</div>
+                <h3>Jobs Created</h3>
+            </div>
+            <div>
+                <div class="counter" data-target="50">0</div>
+                <h3> Crores Funding raised</h3>
+            </div>
+			<div>
+                <div class="counter" data-target="100">0</div>
+                <h3>Network of Investors</h3>
+            </div>
+        </div>
+    </div>
+
+			<script> const counters = document.querySelectorAll('.counter');
+		const speed = 100;
+
+		counters.forEach(counter => {
+			const updateCount = () => {
+				const target = +counter.getAttribute('data-target');
+				const count = +counter.innerText;
+
+				const inc = target / speed;
+
+				if (count < target) {
+					counter.innerText = Math.ceil(count + inc);
+					setTimeout(updateCount, 80)
+				} else {
+					counter.innerText = target
+				}
+			}
+
+			updateCount();
+		})</script>
+</body>
+</html>
