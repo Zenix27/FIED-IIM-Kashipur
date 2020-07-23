@@ -2,7 +2,7 @@
 Implemented Codebase
 
 This repositotry contains different Web Development Resources, that I learned and implemented during my Internship at IIM Kashipur, one of the premier B-Schools in India.
-It was a great experience as I revamped and reconstructed the whole (FIED IIM Kashipur)[fied.in] website from scratch.
+It was a great experience as I revamped and reconstructed the whole [FIED IIM Kashipur](https://www.fied.in/) website from scratch.
 
 
 • Wrote well designed and efficient HTML, CSS, Javascript etc. on existing
