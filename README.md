@@ -6,7 +6,7 @@ to be the leading incubator of India by 2025 and offer a comprehensive ecosystem
 This repository contains different Web Development Resources, that I learned and implemented during my Internship at IIM Kashipur, one of the premier B-Schools in India.
 It was a great experience as I revamped and reconstructed the whole [FIED IIM Kashipur](https://www.fied.in/) website from scratch.
 
-
+# Job Responsibilities
 • Wrote well designed and efficient HTML, CSS, Javascript etc. on existing
 website and applications using best development tools on the Wix Platform.\
 • Created website layout/user interface by using standard HTML/CSS practices
